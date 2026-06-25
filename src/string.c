@@ -93,13 +93,10 @@ char *strstr(char *str, const char *substring)
 
 u64 strtou64(char *str, size_t base)
 {
-	char *ptr = str;
 	char c;
 	u64 res, digit;
-	bool neg = false;
 
 	if (strncmp(str, "-", 1) == 0) {
-		neg = true;
 		str++;
 	}
 
